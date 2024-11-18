@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  repository: us-central1-docker.pkg.dev/keen-acolyte-441610-k2/gke-bluegreen/nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80

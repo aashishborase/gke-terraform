@@ -1,7 +1,7 @@
 resource "google_container_node_pool" "secondary" {
   name       = var.secondary_node_pool_name
   location   = "${var.region}-a"
-  cluster    = google_container_cluster.detection_workloads.name
+  cluster    = google_container_cluster.bluegreen_workloads.name
   node_count = var.secondary_node_pool_count
 
    autoscaling {

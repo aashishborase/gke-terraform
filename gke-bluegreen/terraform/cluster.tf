@@ -1,4 +1,4 @@
-resource "google_container_cluster" "detection_workloads" {
+resource "google_container_cluster" "bluegreen_workloads" {
   name     = var.cluster_name
   location = "${var.region}-a"
 

@@ -9,7 +9,7 @@ pipeline {
 
     environment {
         // Replace with your specific Terraform configuration directory
-        TF_WORKING_DIR = './fraud_detection/terraform'   // Path where your Terraform files are located
+        TF_WORKING_DIR = './gke-bluegreen/terraform'   // Path where your Terraform files are located
     }
 
     stages {

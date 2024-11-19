@@ -21,11 +21,11 @@ resource "google_container_cluster" "bluegreen_workloads" {
      }
    }
 
-  private_cluster_config {
-    enable_private_endpoint = false
-    enable_private_nodes   = true 
-    master_ipv4_cidr_block = "10.13.0.0/28"
-  }
+  # private_cluster_config {
+  #   enable_private_endpoint = false
+  #   enable_private_nodes   = true 
+  #   master_ipv4_cidr_block = "10.13.0.0/28"
+  # }
 
   # Define networking
   network    = google_compute_network.vpc_network.name

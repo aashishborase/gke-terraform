@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "nginx"  // Replace with your Docker image name
-        DOCKER_REGISTRY = "us-central1-docker.pkg.dev/keen-acolyte-441610-k2/gke-bluegreen"    // Optional: If you are pushing to a registry (e.g., DockerHub or private registry)
+        DOCKER_REGISTRY = "us-central1-docker.pkg.dev/aashish-450606/gke-bluegreen"    // Optional: If you are pushing to a registry (e.g., DockerHub or private registry)
         WORKING_DIR = './gke-bluegreen/docker'
     }
 

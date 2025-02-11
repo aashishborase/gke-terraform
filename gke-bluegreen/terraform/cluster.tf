@@ -26,6 +26,10 @@ resource "google_container_cluster" "bluegreen_workloads" {
   #   enable_private_nodes   = true 
   #   master_ipv4_cidr_block = "10.13.0.0/28"
   # }
+  # # Enable autoscaler for the GKE cluster
+  # cluster_autoscaler {
+  #   enabled = true
+  # }   
 
   # Define networking
   network    = google_compute_network.vpc_network.name

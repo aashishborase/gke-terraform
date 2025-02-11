@@ -13,7 +13,7 @@ pipeline {
 
         stage('Connect to the cluster') {
             steps {
-                sh 'gcloud container clusters get-credentials bluegreen-cluster --zone us-central1-a --project keen-acolyte-441610-k2'
+                sh 'gcloud container clusters get-credentials bluegreen-cluster --zone us-central1-a --project aashish-450606'
             }
         }
         stage('Helm Version Check') {

@@ -4,6 +4,10 @@ resource "google_container_node_pool" "secondary" {
   cluster    = google_container_cluster.bluegreen_workloads.name
   node_count = var.secondary_node_pool_count
 
+ # Enable autoscaler for the GKE cluster
+  # cluster_autoscaler {
+  #   enabled = true
+  # }   
    autoscaling {
     min_node_count = 1
     max_node_count = 2

@@ -5,7 +5,7 @@ pipeline {
         string(name: 'TAG', , defaultValue: '1.0.0', description: 'please enter the tag in following format 1.0.0')
         string(name: 'RELEASE_NAME', defaultValue: 'my-nginx-chart', description: 'Helm release name')
         string(name: 'OLD_RELEASE_NAME', defaultValue: 'NEW_DEPLOYMENT', description: 'previous release')
-        string(name: 'CHART_NAME', defaultValue: './gke_bluegreen/application-chart', description: 'Path or name of Helm chart')
+        string(name: 'CHART_NAME', defaultValue: '../gke-bluegreen/application-chart', description: 'Path or name of Helm chart')
         string(name: 'NAMESPACE', defaultValue: 'default', description: 'Kubernetes namespace')
     }
 
